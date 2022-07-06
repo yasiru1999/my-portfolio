@@ -1,0 +1,98 @@
+.pS {
+    width: 12%;
+    height: 17vh;
+    margin: 20px 6px;
+    border: 2px solid rgb(243, 242, 242);
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    background-color: aliceblue;
+
+}
+
+.pt-browser {
+    height: 10px;
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+}
+
+.p-circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 3px;
+    background-color: white;
+}
+
+.ps-img {
+    width: 32%;
+    height: 32%;
+    border: 2px solid rgb(243, 242, 242);
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 10px;
+}
+
+/*.p:hover .p-img {*/
+/*    transform: translateY(-100%);*/
+/*}*/
+
+.p-button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+}
+
+.p-button-shadow:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.p-para{
+    text-align: justify;
+    padding: 10px;
+}
+
+.p-img-b{
+
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .pS {
+        width: 45%;
+        height: 100vh;
+    }
+
+    .p-para{
+        text-align: justify;
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .p-button{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 7px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+
+    }
+}
