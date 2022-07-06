@@ -2,7 +2,7 @@ import React from "react"
 import Header from "./component/Head/Header"
 import Skills from "./component/SkillList/SkillList"
 import Home from "./component/Home/Home"
-// import Portfolio from "./component/Portfolio/Portfolio"
+import Projects from "./component/Projects/Projects"
 // import Resume from "./component/Resume/Resume"
 // import Testimonial from "./component/Testimonial/Testimonial"
 // import Blog from "./component/Blog/Blog"
@@ -16,6 +16,7 @@ const App = () => {
           <Header />
           <Home />
           <Skills />
+          <Projects />
       </>
   )
 }
