@@ -7,7 +7,7 @@ import { developmentData } from "../../DevelopmentT&FData";
 
 const SkillList = () => {
     return (
-        <div className="pl">
+        <div className="pl" id="skills">
             <div className="pl-texts">
                 <hr />
                 <h1 className="pl-title">TECH SKILLS</h1>

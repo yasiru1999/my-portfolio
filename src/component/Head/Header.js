@@ -9,6 +9,10 @@ const Header = () => {
     })
     // Toogle Menu
     const [Mobile, setMobile] = useState(false)
+
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
     return (
         <>
             <header className='header'>
@@ -19,12 +23,16 @@ const Header = () => {
 
                     <div className='navlink'>
                         <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"} onClick={() => setMobile(false)}>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                            <li><button className='home-btn'>Buy Now</button></li>
+                            <li><a href="#skills">Tech Skills</a></li>
+                            <li><a href="#portfolio">Projects</a></li>
+                            <li><a href="#blog">Blogs</a></li>
+                            <li><a href="#contact">Contact Me</a></li>
+                            <li>
+                                    <button
+                                        className='home-btn'
+                                        onClick={() => openInNewTab('https://drive.google.com/file/d/1lwHq_02VSX_aoMjI4lAOCVjAMB5dfjtB/view?usp=sharing')}
+                                    >My Resume</button>
+                            </li>
                         </ul>
 
                         <button className='toggle' onClick={() => setMobile(!Mobile)}>

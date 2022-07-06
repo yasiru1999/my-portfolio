@@ -1,38 +1,29 @@
-import React, {useState} from "react";
+import React, {useRef, useState} from "react";
 import "./Contact.css"
+import emailjs from "emailjs-com"
 import ContactImage from "../../pic/contact.png"
 
 const Contact = () => {
 
-    const [data, setData] = useState({
-        fullname: "",
-        phone: "",
-        email: "",
-        subject: "",
-        message: "",})
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
 
-    const InputEvent = (event) => {
-        const { name, value } = event.target
+    const form = useRef();
+    const [done, setDone] = useState(false)
 
-        setData((preVal) => {
-            return {
-                ...preVal,
-                [name]: value,
-            }
-        })
-    }
+    const formSubmit = (e) => {
+        e.preventDefault();
 
-    const formSubmit = (event) => {
-        event.preventDefault()
-        alert(
-            `My name is ${data.fullname}. 
-	         My phone number is ${data.phone}. 
-	         My email address is ${data.email}. 
-	         My Subject on  ${data.subject}. 
-	         Here is my message I want to say : ${data.message}. 
-	         `
-        )
-    }
+        emailjs.sendForm('gmail', 'template_dx8l2r4', form.current, 'TKRA7l4S6PnJkDId0')
+            .then((result) => {
+                console.log(result.text);
+                setDone(true);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset()
+    };
 
     return(
         <div>
@@ -53,17 +44,26 @@ const Contact = () => {
                                         Matara, 81000, SriLanka.
                                     </p>
                                     <p>Phone: +94 770377445</p>
-                                    <p>Email: yasirunavoda518@gmail.com</p> <br />
+                                    <p>Email: <a>yasirunavoda518@gmail.com</a></p> <br />
                                     <span>FIND WITH ME</span>
                                     <div className='button f_flex'>
-                                        <button className='btn_shadow'>
-                                            <i className='fab fa-facebook-f'/>
+                                        <button
+                                            className='btn_shadow'
+                                            onClick={() => openInNewTab('https://www.linkedin.com/in/yasiru-navoda/')}
+                                        >
+                                            <i className='fab fa-linkedin-in'/>
                                         </button>
-                                        <button className='btn_shadow'>
-                                            <i className='fab fa-instagram'/>
+                                        <button
+                                            className='btn_shadow'
+                                            onClick={() => openInNewTab('https://github.com/yasiru1999')}
+                                        >
+                                            <i className='fab fa-github'/>
                                         </button>
-                                        <button className='btn_shadow'>
-                                            <i className='fab fa-twitter'/>
+                                        <button
+                                            className='btn_shadow'
+                                            onClick={() => openInNewTab('https://medium.com/@yasirunavoda')}
+                                        >
+                                            <i className='fab fa-medium'/>
                                         </button>
                                     </div>
                                 </div>
@@ -72,32 +72,34 @@ const Contact = () => {
 
                         {/*Contact Me Form*/}
                         <div className='right box_shadow'>
-                            <form onSubmit={formSubmit}>
+                            <form ref={form} onSubmit={formSubmit}>
                                 <div className='f_flex'>
                                     <div className='input row'>
                                         <span>YOUR NAME</span>
-                                        <input type='text' name='fullname' value={data.fullname} onChange={InputEvent} />
+                                        <input type='text' name='from_name'/>
                                     </div>
                                     <div className='input row'>
                                         <span>PHONE NUMBER </span>
-                                        <input type='number' name='phone' value={data.phone} onChange={InputEvent} />
+                                        <input type='number' name='from_number'/>
                                     </div>
                                 </div>
                                 <div className='input'>
                                     <span>EMAIL </span>
-                                    <input type='email' name='email' value={data.email} onChange={InputEvent} />
+                                    <input type='email' name='from_email'/>
                                 </div>
                                 <div className='input'>
                                     <span>SUBJECT </span>
-                                    <input type='text' name='subject' value={data.subject} onChange={InputEvent} />
+                                    <input type='text' name='from_subject'/>
                                 </div>
                                 <div className='input'>
                                     <span>YOUR MESSAGE </span>
-                                    <textarea cols='30' rows='10' name='message' value={data.message} onChange={InputEvent}/>
+                                    <textarea cols='30' rows='10' name='message'/>
                                 </div>
                                 <button className='btn_shadow'>
                                     SEND MESSAGE <i className='fa fa-long-arrow-right'/>
                                 </button>
+                                <br />
+                                {done && "Thank you..."}
                             </form>
                         </div>
 

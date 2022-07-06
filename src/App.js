@@ -5,7 +5,7 @@ import Home from "./component/Home/Home"
 import Projects from "./component/Projects/Projects"
 import Blog from "./component/Blog/Blog"
 import Contact from "./component/Contact/Contact"
-// import Footer from "./component/Footer"
+import Footer from "./component/Footer/Footer"
 import "./App.css"
 
 const App = () => {
@@ -17,6 +17,7 @@ const App = () => {
           <Projects />
           <Blog />
           <Contact />
+          <Footer />
       </>
   )
 }

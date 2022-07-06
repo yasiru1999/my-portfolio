@@ -2,14 +2,15 @@ import React from "react"
 import Card from "./Card"
 import BlogApi from "./BlogDataApi"
 import "./Blog.css"
-import "../Projects/Projects.css"
+
 
 const Blog = () => {
     return (
         <>
             <section className='Portfolio Blog' id='blog'>
-                <div className='container top'>
+                <div className='container'>
                     <div className='heading text-center'>
+                        <h4>VISIT TO MY BLOGS</h4>
                         <h1>My Blogs</h1>
                     </div>
 
