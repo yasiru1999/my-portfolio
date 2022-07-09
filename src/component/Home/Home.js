@@ -68,13 +68,13 @@ const Home = () => {
 
                             </div>
                         </div>
-                        <p>I am an Undergraduate with a great passion for software development who is
-                            hardworking and enthusiastic. Currently in my third year of studying software
-                            engineering at SriLanka Institute of Information Technology. I have a strong
-                            ability to learn new programming languages and adapt to new technologies.
-                            My objective is to work for an organization which provide the opportunity to
-                            improve my knowledge, skills and gain more experience while growing along with
-                            the organizational objectives and taking the organization to excellence
+                        <p>I am an Undergraduate with a great passion for software development who is hardworking
+                            and enthusiastic. Currently in my third year of studying software engineering at
+                            SriLanka Institute of Information Technology. I have a strong ability to learn new
+                            programming languages and adapt to new technologies. My objective is to work for an
+                            organization that provide the opportunity to improve my knowledge, and skills and gain
+                            more experience while growing along with the organizational objectives and taking the
+                            organization to excellence.
                         </p>
                     </div>
 

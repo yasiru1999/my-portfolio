@@ -2,7 +2,7 @@ const Projects_data = [
     {
         id: 1,
         title:"Train Ticket Reservation System",
-        img: "https://inc42.com/wp-content/uploads/2019/11/shutterstock_1539156419-1.jpg",
+        img: "https://imagizer.imageshack.com/img922/1971/FnbMcD.png",
         link: "https://github.com/yasiru1999/Train-ticket-reservation",
         tec:"Java-Servlet (MVC Architecture)",
         desc:"A Railway train ticket reservation system developed using java servlet with MVC architecture for the software engineering  2nd year OOP module in SLIIT." +
@@ -11,7 +11,7 @@ const Projects_data = [
     {
         id: 2,
         title:"Research Project Management Tool ",
-        img: "https://www.jing.fm/clipimg/detail/135-1352803_team-of-software-developers-technology-in-business-png.png",
+        img: "https://imagizer.imageshack.com/img924/8993/R57B6a.png",
         link: "https://github.com/yasiru1999/Research-Project-Management-Tool",
         tec:"ReactJs, NodeJs, ExpressJs, MongoDB (MERN STACK)",
         desc:"Research-Project-Management-Tool is develop for the SLIIT university 4th year students." +
@@ -23,7 +23,7 @@ const Projects_data = [
     {
         id: 3,
         title:"Travel Agency and Tour Planning System.",
-        img: "https://www.nadovatours.com/uploads/Vietnam/Blog/travel-service.jpg",
+        img: "https://imagizer.imageshack.com/img924/4628/kgzp6N.png",
         link: "https://github.com/yasiru1999/Travel-Agency-and-Tour-Planning-Managemnt-System",
         tec:"ReactJs, NodeJs, ExpressJs, MongoDB (MERN STACK)",
         desc:"Travel Agency and Tour Planning is a multilingual travel and tour management software that helps organizations to manage operations related to reservations, ticketing, customer check-ins, payment processing, and more on a centralized platform. " +
@@ -32,7 +32,7 @@ const Projects_data = [
     {
         id: 4,
         title:"Fitness Management Application",
-        img: "https://images-na.ssl-images-amazon.com/images/I/41QM59cwayL.jpg",
+        img: "https://imagizer.imageshack.com/img922/9558/IadzKE.png",
         link: "https://github.com/yasiru1999/MAD_Project_CrossFit",
         tec:"Android Studio (Java,Firebase)",
         desc:"A fitness management system developed using Android studio for the software engineering  2nd-year Mobile application development module in SLIIT." +
@@ -42,7 +42,7 @@ const Projects_data = [
     {
         id: 5,
         title:"Movie ticket reservation system",
-        img: "https://www.fwd-net.com/wp-content/uploads/2018/04/c-990x557.jpg",
+        img: "https://imagizer.imageshack.com/img924/6853/AF69fX.png",
         link: "https://github.com/yasiru1999/movie-reservation-system",
         tec:"ReactJs, NodeJs, ExpressJs, MongoDB (MERN STACK), Wso2 Service integrator",
         desc:"A Movie ticket reservation system developed using ReactJs as the frontend and NodeJs as the backend for the software engineering 3rd year Distributed system module in SLIIT." +
